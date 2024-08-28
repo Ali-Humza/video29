@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .cont {
+            background-color: rgb(251, 255, 0);
+            border: 3px solid black;
+            height: 50vh;
+            width: 20vw;
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .box {
+            background-color: red;
+            height: 5vh;
+            width: 3vw;
+            border-radius: 100px;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 0.9s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+            /* animation-fill-mode: forwards; */
+        }
+
+        .box1 {
+            background-color: red;
+            height: 5vh;
+            width: 3vw;
+            border-radius: 100px;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 0.8s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+            /* animation-fill-mode: forwards; */
+        }
+
+        @keyframes animation {
+            from {}
+
+            to {
+                transform: translatey(270px) rotatey(20deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
